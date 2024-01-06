@@ -1,7 +1,7 @@
 class LinkedList
 
-  def initialize
-
+  def initialize(value)
+    @head = Node.new(value, nil)
   end
 
   # adds a new node containing 'value' to the end of the list
