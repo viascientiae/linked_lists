@@ -51,12 +51,14 @@ class LinkedList
 
   # returns the node at the given index
   def at(index)
+    return nil if index < 0
+
     counter = 0
     current_node = @head
 
     while current_node != nil
       return current_node if counter == index
-      count += 1
+      counter += 1
       current_node = current_node.next_node
     end
 
@@ -92,7 +94,7 @@ class LinkedList
 
     while current_node != nil
       return index if current_node.value == value
-      index + = 1
+      index += 1
       current_node = current_node.next_node
     end
 
