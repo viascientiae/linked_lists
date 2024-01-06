@@ -22,7 +22,15 @@ class LinkedList
 
   # returns the total number of nodes in the list
   def size
+    counter = 0
+    current_node = @head
 
+    while current_node != nil
+      counter += 1
+      current_node = current_node.next_node
+    end
+
+    counter
   end
 
   # returns the first node in the list
