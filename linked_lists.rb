@@ -21,7 +21,7 @@ class LinkedList
 
   # returns the first node in the list
   def head
-
+    @head
   end
 
   # returns the last node in the list
