@@ -26,7 +26,13 @@ class LinkedList
 
   # returns the last node in the list
   def tail
+    current_node = @head
 
+    while current_node.next_node != nil
+      current_node = current_node.next_node
+    end
+
+    current_node
   end
 
   # returns the node at the given index
