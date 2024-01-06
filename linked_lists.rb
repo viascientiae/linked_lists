@@ -6,7 +6,13 @@ class LinkedList
 
   # adds a new node containing 'value' to the end of the list
   def append(value)
+    current_node = @head
 
+    while current_node.next_node != nil
+      current_node = current_node.next_node
+    end
+
+    current_node.next_node = Node.new(value, nil)
   end
 
   # adds a new node containing 'value' to the start of the list
